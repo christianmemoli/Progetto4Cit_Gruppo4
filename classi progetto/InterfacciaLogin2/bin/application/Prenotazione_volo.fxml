@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text=" Prenotazione volo" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <TextField layoutX="22.0" layoutY="37.0" />
+            <TextField layoutX="22.0" layoutY="101.0" />
+            <Text layoutX="61.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="città partenza" />
+            <Text layoutX="69.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="città arrivo" />
+            <Text layoutX="61.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="data partenza" />
+            <TextField layoutX="23.0" layoutY="175.0" />
+            <TreeTableView layoutX="203.0" prefHeight="377.0" prefWidth="395.0">
+              <columns>
+                <TreeTableColumn prefWidth="75.0" text="C1" />
+                <TreeTableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TreeTableView>
+         </children></AnchorPane>
+  </content>
+</TitledPane>

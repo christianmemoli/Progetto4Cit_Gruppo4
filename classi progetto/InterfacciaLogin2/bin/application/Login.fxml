@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="308.0" prefWidth="293.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerLogin" >
+   <children>
+      <ImageView fitHeight="321.0" fitWidth="307.0" layoutX="-7.0" layoutY="-6.0">
+         <image>
+            <Image url="@../../../images-3.jpeg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="USERNAME" layoutX="63.0" layoutY="107.0" />
+      <PasswordField fx:id="PASSWORD" layoutX="63.0" layoutY="174.0" />
+      <Label layoutX="107.0" layoutY="80.0" text="USERNAME" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="107.0" layoutY="146.0" text="PASSWORD" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="109.0" layoutY="25.0" text="LOGIN" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="accesso" layoutX="107.0" layoutY="212.0" mnemonicParsing="false" text="ACCESSO" onMouseClicked="#Login"/>
+      <Button fx:id="registrazione" layoutX="86.0" layoutY="260.0" mnemonicParsing="false" text="REGISTRAZIONE" onMouseClicked="#Registrazione"/>
+   </children>
+</Pane>
