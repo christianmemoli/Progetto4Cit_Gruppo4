@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.3793969849246231" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Text layoutX="186.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestione Volo" wrappingWidth="245.13671875">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <TextField layoutX="29.0" layoutY="74.0" prefHeight="25.0" prefWidth="166.0" />
+            <Text layoutX="29.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inserisci il codice cliente">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Button layoutX="223.0" layoutY="74.0" mnemonicParsing="false" text="Conferma" />
+            <Button layoutX="329.0" layoutY="74.0" mnemonicParsing="false" text="Anulla" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <TableView layoutX="-3.0" prefHeight="244.0" prefWidth="606.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Codice Volo" />
+                <TableColumn prefWidth="75.0" text="Partenza" />
+                  <TableColumn prefWidth="75.0" text="Arrivo" />
+                  <TableColumn prefWidth="75.0" text="Data" />
+                  <TableColumn prefWidth="81.0" text="Ora Partenza" />
+                  <TableColumn prefWidth="69.0" text="Ora Arrivo" />
+                  <TableColumn prefWidth="75.0" text="Nr.Posti" />
+                  <TableColumn prefWidth="75.0" text="Costo Volo" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

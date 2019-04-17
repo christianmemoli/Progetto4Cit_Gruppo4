@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@../foto/AEREO.jpg" />
+         </image>
+      </ImageView>
+      <TextField layoutX="56.0" layoutY="213.0" />
+      <Text layoutX="433.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="costo del volo" />
+      <TextField layoutX="56.0" layoutY="139.0" />
+      <Text layoutX="75.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="aeroporto di partenza" />
+      <Text layoutX="82.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="aeroporto di arrivo" />
+      <Button layoutX="443.0" layoutY="338.0" mnemonicParsing="false" text="Annulla" />
+      <TextField layoutX="395.0" layoutY="60.0" />
+      <Text layoutX="93.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ora di partenza" />
+      <TextField layoutX="56.0" layoutY="60.0" />
+      <TextField layoutX="397.0" layoutY="213.0" />
+      <TextField layoutX="58.0" layoutY="284.0" />
+      <TextField layoutX="395.0" layoutY="139.0" />
+      <Text layoutX="98.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="data del volo" />
+      <Button layoutX="442.0" layoutY="284.0" mnemonicParsing="false" text="Inserisci" />
+      <Text layoutX="439.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ora di arrivo" />
+      <Text layoutX="429.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="numero di posti" />
+   </children>
+</Pane>

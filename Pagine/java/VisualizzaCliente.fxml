@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="287.0" prefWidth="408.0" text="Visualizza cliente" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="314.0" prefWidth="598.0">
+         <children>
+            <TextField layoutX="29.0" layoutY="63.0" />
+            <Text layoutX="85.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codice" />
+            <TreeTableView layoutX="203.0" layoutY="-2.0" prefHeight="264.0" prefWidth="207.0">
+              <columns>
+                <TreeTableColumn prefWidth="75.0" text="C1" />
+                <TreeTableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TreeTableView>
+            <Button layoutX="29.0" layoutY="176.0" mnemonicParsing="false" text="Cerca" />
+            <Button layoutX="121.0" layoutY="176.0" mnemonicParsing="false" text="Annulla" />
+         </children></AnchorPane>
+  </content>
+</TitledPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="informazioni volo" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="376.0" fitWidth="600.0" layoutX="-2.0">
+               <image>
+                  <Image url="@../foto/iStock-484616224-653x435.jpg" />
+               </image>
+            </ImageView>
+            <TextArea layoutX="28.0" layoutY="22.0" prefHeight="329.0" prefWidth="543.0" />
+         </children></AnchorPane>
+  </content>
+</TitledPane>
