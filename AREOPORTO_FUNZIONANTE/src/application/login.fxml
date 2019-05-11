@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane cacheHint="QUALITY" maxHeight="282.0" maxWidth="208.0" minHeight="282.0" minWidth="208.0" prefHeight="282.0" prefWidth="208.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_Login">
+   <children>
+      <ImageView fitHeight="282.0" fitWidth="208.0">
+         <image>
+            <Image url="@imagesLogin.jpeg" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="PASSWORD" layoutX="21.0" layoutY="147.0" promptText="PASSWORD" />
+      <TextField fx:id="USERNAME" layoutX="21.0" layoutY="96.0" promptText="USERNAME" />
+      <Button fx:id="registrazione" layoutX="52.0" layoutY="238.0" mnemonicParsing="false" text="Registrazione" onAction="#Registrazione"/>
+      <Button fx:id="Accesso" layoutX="74.0" layoutY="192.0" mnemonicParsing="false" text="accedi" onAction="#Login"/>
+      <Label focusTraversable="false" layoutX="66.0" layoutY="24.0" text="LOGIN" textFill="#f8f8f8">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

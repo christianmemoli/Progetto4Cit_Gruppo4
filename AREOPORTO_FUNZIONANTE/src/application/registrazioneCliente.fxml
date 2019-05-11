@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="361.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_Registrazione">
+   <children>
+      <ImageView fitHeight="361.0" fitWidth="500.0" layoutY="-1.0">
+         <image>
+            <Image url="@../../../Unknown-1.jpeg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="COGNOME" layoutX="282.0" layoutY="95.0" text="Cognome" promptText="Cognome"/>
+      <TextField fx:id="NAZIONE" layoutX="22.0" layoutY="154.0" text="Nazione di Nascita" promptText="Nazione di Nascita"/>
+      <TextField fx:id="CITTA" layoutX="282.0" layoutY="154.0" text="Città di nascita" promptText="Città di nascita"/>
+      <TextField fx:id="NOME" layoutX="22.0" layoutY="95.0" text="Nome" promptText="Nome"/>
+      <Label layoutX="155.0" layoutY="30.0" text="REGISTRAZIONE" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="GG" layoutX="22.0" layoutY="207.0" prefHeight="27.0" prefWidth="40.0" text="gg" promptText="gg"/>
+      <TextField fx:id="MM" layoutX="78.0" layoutY="207.0" prefHeight="27.0" prefWidth="54.0" text="mm" promptText="mm"/>
+      <TextField fx:id="YYYY" layoutX="142.0" layoutY="207.0" prefHeight="27.0" prefWidth="47.0" text="yyyy" promptText="yyyy"/>
+      <Button fx:id="REGISTRATI" layoutX="327.0" layoutY="282.0" mnemonicParsing="false" text="REGISTRATI" onMouseClicked="#Registrati" />
+      <Button fx:id="ANNULLA" layoutX="333.0" layoutY="234.0" mnemonicParsing="false" text="ANNULLA" onMouseClicked="#Annulla" />
+   </children>
+</Pane>
