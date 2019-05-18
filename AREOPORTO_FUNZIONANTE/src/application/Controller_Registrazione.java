@@ -56,19 +56,34 @@ public class Controller_Registrazione
 				e.printStackTrace();
 			}
 		});
+		ANNULLA.addEventHandler(ActionEvent.ACTION,ActionEvent -> 
+		{
+			try {
+				Annulla(ActionEvent);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		});
 	}
 	@FXML
 	public void Registrati(ActionEvent event) throws Exception
 	{
-		Clienti.addCliente(new Cliente(getNome(),getCognome() ,getCitta(),getNazione(),getData()));
-		new LOGIN_SCENE().start(REGISTRAZIONE_SCENE.getPrimaryStage());
+		PAGINABIANCA_SCENE pag=new PAGINABIANCA_SCENE();
+		pag.start(REGISTRAZIONE_SCENE.PrimaryStage);
+		if(Controller_PaginaBianca.getI()==1)
+		{
+			Clienti.addCliente(new Cliente(getNome(),getCognome() ,getCitta(),getNazione(),getData()));
+		}
+		
 		REGISTRAZIONE_SCENE.closestage();
+		new LOGIN_SCENE().start(REGISTRAZIONE_SCENE.getPrimaryStage());
 	}
 	@FXML
 	public void Annulla(ActionEvent event) throws Exception
 	{
-		new LOGIN_SCENE().start(REGISTRAZIONE_SCENE.PrimaryStage);
 		REGISTRAZIONE_SCENE.closestage();
+		new LOGIN_SCENE().start(REGISTRAZIONE_SCENE.getPrimaryStage());
 	}
 	public String getNome() 
 	{

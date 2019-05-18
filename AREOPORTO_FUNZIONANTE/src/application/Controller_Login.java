@@ -88,8 +88,7 @@ public class Controller_Login
 	public void Registrazione(ActionEvent event) throws Exception
 	{
 		LOGIN_SCENE.closestage();
-		new REGISTRAZIONE_SCENE().start(LOGIN_SCENE.PrimaryStage);
-		
+		new REGISTRAZIONE_SCENE().start(LOGIN_SCENE.getPrimaryStage());
 	}
 	
 	public String getUsername() 
