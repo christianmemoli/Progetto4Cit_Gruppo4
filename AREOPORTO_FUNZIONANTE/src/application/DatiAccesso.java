@@ -4,30 +4,46 @@ package application;
 public class DatiAccesso 
 {
 
-		private String username;
+		private int username;
 		private String password;
+		private String Username;
 		
 		public DatiAccesso  (){}
 
-		public DatiAccesso (String username ,String password)
+		public DatiAccesso (int username ,String password)
 		{
 			this.username=username;
 			this.password=password;
+			this.Username=null;
+		}
+		public DatiAccesso (String username ,String password)
+		{
+			this.Username=username;
+			this.password=password;
+			this.username=-1;
 		}
 		public DatiAccesso (DatiAccesso d)
 		{
-		
 			this.username=d.username;
 			this.password=d.password;
+			this.Username=d.Username;
 		} 
 			
-		public String getUsername() 
+		public int getUsernameCliente() 
 		{
 			return username;
 		}
-		public void setUsername(String username) 
+		public String getUsernameAdmin() 
+		{
+			return Username;
+		}
+		public void setUsernameCliente(int username) 
 		{
 			this.username = username;
+		}
+		public void setUsernameAdmin(String username) 
+		{
+			this.Username = username;
 		}
 		public String getPassword() 
 		{
@@ -41,7 +57,7 @@ public class DatiAccesso
 		@Override
 		public String toString() 
 		{
-			return "Dati username=" + username + ", password=" + password ;
+			return "Dati username=" + username+ ", password=" + password ;
 		}
 	}
 		

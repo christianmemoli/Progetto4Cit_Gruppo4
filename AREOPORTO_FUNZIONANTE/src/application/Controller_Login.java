@@ -61,23 +61,25 @@ public class Controller_Login
 	public void Login(ActionEvent event) throws Exception
 	{
 		DatiAccesso d=new DatiAccesso(getUsername(),getPassword());
-		if(Integer.parseInt(d.getUsername())!=0)
+		if((d.getUsernameCliente())!=0)
 		{
-			if(ListaDatiAccesso.ricerca(Integer.parseInt(getUsername())).getUsername().equals(d.getUsername()))
+			if(ListaDatiAccesso.ricerca(Integer.parseInt(getUsername())).getUsernameCliente()== d.getUsernameCliente())
 			{
 				if(ListaDatiAccesso.ricerca(Integer.parseInt(getUsername())).getPassword().equals(d.getPassword()))
 				{
-					//ACCESSO CLIENTE
+					Loggato.setVar(2);
+					LOGIN_SCENE.closestage();
+					new PAGPRINC_SCENE().start(LOGIN_SCENE.getPrimaryStage());
 				}
 			}
 		}
 		else
 		{
-			if(ListaDatiAccesso.ricerca(Integer.parseInt(getUsername())).getUsername().equals(d.getUsername()))
+			if(ListaDatiAccesso.ricerca(Integer.parseInt(getUsername())).getUsernameAdmin().equals(d.getUsernameAdmin()))
 			{
 				if(ListaDatiAccesso.ricerca(Integer.parseInt(getUsername())).getPassword().equals(d.getPassword()))
 				{
-					//ACCESSO ADMIN
+					Loggato.setVar(1);				
 				}
 			}
 		}
@@ -93,12 +95,12 @@ public class Controller_Login
 	
 	public String getUsername() 
 	{
-		return username.toString();
+		return username.get();
 	}
 
 	public String getPassword() 
 	{
-		return password.toString();
+		return password.get();
 	}
 	
 	

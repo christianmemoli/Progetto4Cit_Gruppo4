@@ -9,7 +9,7 @@ import java.util.*;
 
 public class Clienti implements Serializable
 {
-	private static Integer matrice=0,LastCliCode;
+	private static Integer matrice=1,LastCliCode;
 	
 	private static HashMap <Integer,Utente> clienti=new HashMap<Integer,Utente>();
 	
@@ -26,6 +26,7 @@ public class Clienti implements Serializable
 		matrice++;
 		return i;
 	}
+	
 	public static Integer addCliente(Cliente c) throws CloneNotSupportedException
 	{
 			Cliente cl=new Cliente((Cliente) c.Clone());
@@ -36,7 +37,8 @@ public class Clienti implements Serializable
 		
 			if(clienti.get(c.getCode())!=null)
 			{
-				return 1;
+				ListaDatiAccesso.addCliente(c.getCode(),new DatiAccesso(c.getCode(),RandomPassword.generate()));
+				return c.getCode();
 			}
 			else
 			{
@@ -53,7 +55,8 @@ public class Clienti implements Serializable
 		
 			if(clienti.get(c.getCode())!=null)
 			{
-				return 1;
+				ListaDatiAccesso.addAdmin(c.getCode(),new DatiAccesso(a.getUsername(),a.getPassword()));
+				return c.getCode();
 			}
 			else
 			{
@@ -68,6 +71,7 @@ public class Clienti implements Serializable
 		
 		if(clienti.get(code)==null)
 		{
+			ListaDatiAccesso.deleteUtenti(code);
 			return 1;
 		}
 		else

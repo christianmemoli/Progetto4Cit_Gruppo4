@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.ControllerPAGPRINC">
+   <children>
+      <Pane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="330.0">
+         <children>
+            <MenuButton layoutX="128.0" layoutY="44.0" mnemonicParsing="false" text="Cienti">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="visualizza account" fx:id="visualizzaAccount" onclicked="#visualizzaAccount"/>
+                  <MenuItem mnemonicParsing="false" text="elimina account" fx:id="eliminaAccount" onclicked="#DeleteAccount"/>
+                  <MenuItem mnemonicParsing="false" text="aggiungi account" fx:id="aggiungiAccount" onclicked="#DeleteAccount"/>
+               </items>
+            </MenuButton>
+            <MenuButton layoutX="134.0" layoutY="141.0" mnemonicParsing="false" text="Voli">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="ricerca voli" fx:id="ricercaVoli" onclicked="#showVoli"/>
+                  <MenuItem mnemonicParsing="false" text="aggiunta voli" fx:id="aggiuntaVoli" onclicked="#showVoli"/>
+                  <MenuItem mnemonicParsing="false" text="elimina voli" fx:id="eliminaVoli" onclicked="#showVoli"/>
+               </items>
+            </MenuButton>
+            <MenuButton layoutX="109.0" layoutY="238.0" mnemonicParsing="false" text="Prenotazioni">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="visualizza prenotazioni" fx:id="visualizzaPrenotazioni"onclicked="#showPrenotazioni"/>
+                  <MenuItem mnemonicParsing="false" text="aggiungi prenotazioni" fx:id="aggiungiPrenotazioni"onclicked="#newPrenotazione"/>
+                  <MenuItem mnemonicParsing="false" text="elimina prenotazioni" fx:id="eliminaPrenotazioni" onclicked="#DelPrenotazione"/>
+               </items>
+            </MenuButton>
+            <Button layoutX="243.0" layoutY="359.0" mnemonicParsing="false" text="LOGOUT" fx:id="LOGOUT"/>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

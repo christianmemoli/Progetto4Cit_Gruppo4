@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Modifica prenotazione" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  <content>
+    <AnchorPane prefHeight="374.0" prefWidth="866.0">
+         <children>
+            <Text layoutX="45.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inserire numero di bagagli" />
+            <TextField layoutX="40.0" layoutY="66.0" />
+            <TextField layoutX="40.0" layoutY="175.0" />
+            <Text layoutX="42.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inserire il peso complessivo" />
+            <Button layoutX="40.0" layoutY="254.0" mnemonicParsing="false" text="Conferma" />
+            <Button layoutX="137.0" layoutY="254.0" mnemonicParsing="false" text="Annulla" />
+            <TextArea layoutX="250.0" layoutY="-7.0" prefHeight="294.0" prefWidth="373.0" />
+         </children></AnchorPane>
+  </content>
+</TitledPane>

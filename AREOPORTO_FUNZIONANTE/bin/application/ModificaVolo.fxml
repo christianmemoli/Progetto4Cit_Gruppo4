@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Modifica Volo" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <TextField layoutX="107.0" layoutY="17.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <TextField layoutX="366.0" layoutY="17.0" />
+            <Text layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aereoporto Partenza" wrappingWidth="76.798828125" />
+            <Text layoutX="289.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aereoporto Arrivo" wrappingWidth="63.90625" />
+            <Text layoutX="15.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ora Partenza" />
+            <Text layoutX="289.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ora Arrivo" />
+            <Text layoutX="11.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prezzo Biglietto" />
+            <Text layoutX="11.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Volo" />
+            <TextField layoutX="107.0" layoutY="70.0" />
+            <TextField layoutX="366.0" layoutY="70.0" />
+            <TextField layoutX="107.0" layoutY="123.0" />
+            <TextField layoutX="107.0" layoutY="220.0" />
+            <Text layoutX="11.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Posti Disponibili" />
+            <TextField layoutX="107.0" layoutY="175.0" prefHeight="25.0" prefWidth="27.0" />
+            <TextField layoutX="140.0" layoutY="175.0" prefHeight="25.0" prefWidth="39.0" />
+            <TextField layoutX="186.0" layoutY="175.0" prefHeight="25.0" prefWidth="70.0" />
+            <Button layoutX="153.0" layoutY="303.0" mnemonicParsing="false" text="Conferma" />
+            <Button layoutX="389.0" layoutY="303.0" mnemonicParsing="false" text="Annulla" />
+         </children></AnchorPane>
+  </content>
+</TitledPane>
