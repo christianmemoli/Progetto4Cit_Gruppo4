@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="287.0" prefWidth="498.0" text="Visualizza cliente" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_VisualizzaCliente">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="330.0" prefWidth="512.0">
+         <children>
+            <TextField layoutX="29.0" layoutY="63.0" fx:id="CODECLIENTE"/>
+            <Text layoutX="85.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codice" />
+            <TreeTableView layoutX="203.0" layoutY="-2.0" prefHeight="264.0" prefWidth="297.0" fx:id="TABELLA">
+              <columns>
+                <TreeTableColumn prefWidth="296.0" text="CLIENTI"/>
+              </columns>
+            </TreeTableView>
+            <Button layoutX="29.0" layoutY="176.0" mnemonicParsing="false" text="Cerca" fx:id="Cerca" onAction="#CERCA"/>
+            <Button layoutX="121.0" layoutY="176.0" mnemonicParsing="false" text="Annulla" fx:id="Annulla" onAction="#ANNULLA"/>
+         </children></AnchorPane>
+  </content>
+</TitledPane>

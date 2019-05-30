@@ -26,6 +26,7 @@ public class Clienti implements Serializable
 		matrice++;
 		return i;
 	}
+	
 	public static Integer addCliente(Cliente c) throws CloneNotSupportedException
 	{
 			Cliente cl=new Cliente((Cliente) c.Clone());
@@ -36,7 +37,9 @@ public class Clienti implements Serializable
 		
 			if(clienti.get(c.getCode())!=null)
 			{
-				return 1;
+				DatiAccesso d=new DatiAccesso(c.getCode(),(String)RandomPassword.generate());
+				ListaDatiAccesso.addCliente(c.getCode(),d);
+				return c.getCode();
 			}
 			else
 			{
@@ -53,7 +56,8 @@ public class Clienti implements Serializable
 		
 			if(clienti.get(c.getCode())!=null)
 			{
-				return 1;
+				ListaDatiAccesso.addAdmin(c.getCode(),new DatiAccesso(a.getUsername(),a.getPassword()));
+				return c.getCode();
 			}
 			else
 			{
@@ -68,6 +72,7 @@ public class Clienti implements Serializable
 		
 		if(clienti.get(code)==null)
 		{
+			ListaDatiAccesso.deleteUtenti(code);
 			return 1;
 		}
 		else

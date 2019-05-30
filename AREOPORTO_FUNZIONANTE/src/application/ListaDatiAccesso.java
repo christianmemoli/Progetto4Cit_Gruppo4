@@ -12,13 +12,13 @@ public class ListaDatiAccesso
 
 		private static HashMap<Integer,DatiAccesso> utenti= new HashMap<Integer,DatiAccesso>();
 
-		public static void addCliente(DatiAccesso c)
+		public static void addCliente(int code,DatiAccesso d) 
+		{
+			utenti.put(code,d);
+		}
+		public static void addAdmin(int code,DatiAccesso d)
 		 {
-			 utenti.put(Clienti.getLastCliCode()+1,c);
-		 }
-		public static void addAdmin(DatiAccesso a)
-		 {
-			 utenti.put(Clienti.getLastCliCode()+1,a);
+			 utenti.put(code,d);
 		 }
 		public static void deleteUtenti(Integer code)
 		 {
