@@ -32,6 +32,16 @@ public class ListaDatiAccesso
 			 }
 			 return null;
 		 }
-		 
+		public static boolean ricercaAdmin(DatiAccesso d)
+		{
+			for(int i=0;i<utenti.size();i++)
+			{
+				if(utenti.get(i).equals(d))
+				{
+					return true;
+				}
+			}
+			return false;
+		}
 	}
 

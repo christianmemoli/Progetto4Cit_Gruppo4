@@ -11,13 +11,13 @@
          <children>
             <TextField layoutX="29.0" layoutY="63.0" fx:id="CODECLIENTE"/>
             <Text layoutX="85.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codice" />
-            <TreeTableView layoutX="203.0" layoutY="-2.0" prefHeight="264.0" prefWidth="297.0" fx:id="TABELLA">
+            <TreeTableView layoutX="203.0" layoutY="-2.0" prefHeight="264.0" prefWidth="297.0" >
               <columns>
-                <TreeTableColumn prefWidth="296.0" text="CLIENTI"/>
+                <TreeTableColumn prefWidth="296.0" text="CLIENTI" fx:id="TABELLA"/>
               </columns>
             </TreeTableView>
-            <Button layoutX="29.0" layoutY="176.0" mnemonicParsing="false" text="Cerca" fx:id="Cerca" onAction="#CERCA"/>
-            <Button layoutX="121.0" layoutY="176.0" mnemonicParsing="false" text="Annulla" fx:id="Annulla" onAction="#ANNULLA"/>
+            <Button layoutX="29.0" layoutY="176.0" mnemonicParsing="false" text="Cerca" fx:id="Cerca" />
+            <Button layoutX="121.0" layoutY="176.0" mnemonicParsing="false" text="Annulla" fx:id="Annulla"/>
          </children></AnchorPane>
   </content>
 </TitledPane>
