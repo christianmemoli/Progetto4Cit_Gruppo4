@@ -1,0 +1,97 @@
+Se metti in login una password a caso non puoi accedere perchè ti da errore. --->Test login password a caso. T
+
+Se lascio le caselle vuote nel login non riesco ad accedere ---> Funziona T
+
+Se metto al posto dell'username il numero 1 ---> accede Funziona T BUG
+
+se metto solo la password ---> funziona T
+
+se metto al posto dell'username la password ---> non funziona T
+
+se metto al posto della password l'username ---> non funziona T 
+  
+
+
+
+
+Schermata registrazione:
+
+
+Al posto del nome inserisco dei numeri---> è un errore. P
+
+al posto del cognome mettiamo dei numeri ---> errore (errore significa che ti da l'username e la password) P
+
+Al posto della cittadinanza mettiamo dei numeri ---> errore P
+
+AL posto della città di nascita mettiamo dei numeri --> errore P
+
+Al posto della data mettiamo delle lettere ---> T
+
+Al posto del giorno di nascita inserisco una data che non esiste ---> errore P
+
+Al posto del mese di nascita inserisco una data che non esiste ---> errore P
+
+Al posto dell' anno di nascita inserisco una data che non esiste ---> errore P
+
+Se le caselle della registrazione le lascio vuote non riesco a registrarmi ---> funziona T
+
+il bottone Registrati ---> funziona T
+
+il bottone annulla ---> funziona T
+
+il bottone registrazione admin ---> funziona T
+
+
+
+
+Registarzione admin ---> funziona T
+
+Al posto del nome mettiamo dei numeri ---> errore P
+
+Al posto del cognome mettiamo dei numeri ---> errore P
+
+Al posto del codice fiscale mettiamo degli interi ---> errore P
+
+Al posto di tutte le caselle mettiamo dei numeri ---> errore P
+
+Login Admin non funziona --> erroe P
+
+Se le caselle della registrazione admin le lascio vuote non riesco a registrarmi ---> funziona T
+
+se scrivo solo il nome non riesco a registrami ---> funziona T
+ 
+se scrivo solo il cognome non riesco a registrami ---> funziona T
+
+se scrivo solo il codice fiscale non riesco a registrami ---> funziona T
+
+se inserisco sia il nome che il cognome non riescoa registrami ---> funziona T
+
+se inserisco il nome e il codice fiscale riesco a rgistrarmi ---> errore P
+
+se inserisco il cognome e il codice fiscale riesco a rgistrarmi ---> errore P
+
+il bottone conferma ---> funziona T
+
+Il bottone annulla ---> funziona T
+
+
+
+
+
+
+Login utente ---> funziona T
+
+nella Pagina principale i vari menu funzionano ---> T
+
+
+menu clienti: visualizza dati --> va a buon fine T
+
+- se metto nella ricerca del cliente il codice ---> errore P
+- bottone cerca ---> non funziona
+- bottone annulla ---> nun funziona
+
+
+
+
+
+
